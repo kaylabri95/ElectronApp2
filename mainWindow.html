@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electron WebSocket App</title>
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo center">Electron WebSocket App</a>   
+    </div>
+  </nav>
+  <ul></ul>
+  <div class="m-2 form-group">
+    <select id="ipaddresses" class="form-control" required>
+        <option value="" selected>Potential Connections</option>
+    </select>
+  </div>
+       <div class="m-2 p-2 d-flex justify-content-between">
+        <button type="button" id="conBtn"  onclick="conToSocket" class="btn btn-secondary btn-sm">Connect</button>
+        <button type="button" id="disconBtn" onclick="disconToSocket" class="btn btn-secondary btn-sm">Disconnect</button>
+    </div>
+    <div>
+        <form name="dataInputForm">
+        <input type="text" name="message">
+        </form>
+    </div>
+    <div class="m-2 d-flex flex-row-reverse">        
+        <button type="button" id="sendBtn" onclick="sendData" class="btn btn-secondary btn-sm">Send Data</button>
+    </div>  
+<script>
+
+
+</script>
+</body>
+</html>
